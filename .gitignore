@@ -1,0 +1,9 @@
+# Respaldos y temporales (no deben desplegarse)
+index-a-respaldo.html
+_ref*
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
