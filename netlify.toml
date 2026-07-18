@@ -15,3 +15,14 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Red de seguridad: las rutas viejas del asistente (ingizer.com/dashboard,
+# /login, etc.) se mudaron a app.ingizer.com. Netlify sirve primero los
+# archivos que existen (index.html, /assets, robots.txt, sitemap.xml,
+# manifest) y SOLO redirige lo que no existe como archivo — es decir, las
+# rutas del asistente. Los parámetros (?view=Users) se conservan solos.
+[[redirects]]
+  from = "/*"
+  to = "https://app.ingizer.com/:splat"
+  status = 301
+  force = false
