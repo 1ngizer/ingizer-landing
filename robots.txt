@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ingizer.com/sitemap.xml
+Sitemap: https://ingizer.com/sitemap.xml
